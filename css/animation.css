@@ -1,0 +1,522 @@
+/*=========================================
+        FERRARI SHOWROOM
+        ANIMATIONS.CSS
+==========================================*/
+
+/* Smooth Scrolling */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+/* Smooth Transition */
+
+*{
+
+    transition:all .35s ease-in-out;
+
+}
+
+/*=========================================
+        FADE IN
+==========================================*/
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+.hero-content{
+
+    animation:fadeIn 2s ease;
+
+}
+
+/*=========================================
+        SLIDE UP
+==========================================*/
+
+@keyframes slideUp{
+
+    from{
+
+        transform:translateY(80px);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:translateY(0);
+
+        opacity:1;
+
+    }
+
+}
+
+.about-section,
+.service-card,
+.car-card,
+.team-card,
+.contact-form,
+.contact-info,
+.review,
+.plan-card,
+.feature-box{
+
+    animation:slideUp 1.2s ease;
+
+}
+
+/*=========================================
+        ZOOM
+==========================================*/
+
+@keyframes zoom{
+
+    from{
+
+        transform:scale(.9);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+.gallery img{
+
+    animation:zoom 1s ease;
+
+}
+
+/*=========================================
+        FLOATING ICONS
+==========================================*/
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.service-card i,
+.feature-box i,
+.social-icons i{
+
+    animation:floating 3s infinite;
+
+}
+
+/*=========================================
+        BUTTON GLOW
+==========================================*/
+
+.btn{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(255,255,255,.3);
+
+    transition:.6s;
+
+}
+
+.btn:hover::before{
+
+    left:100%;
+
+}
+
+/*=========================================
+        CARD HOVER
+==========================================*/
+
+.car-card:hover,
+.service-card:hover,
+.team-card:hover,
+.feature-box:hover,
+.plan-card:hover{
+
+    transform:translateY(-12px) scale(1.03);
+
+}
+
+/*=========================================
+        IMAGE ZOOM
+==========================================*/
+
+.car-card img,
+.gallery-grid img,
+.team-card img{
+
+    transition:.5s;
+
+}
+
+.car-card:hover img,
+.gallery-grid img:hover,
+.team-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/*=========================================
+        NAVIGATION
+==========================================*/
+
+nav ul li a{
+
+    position:relative;
+
+}
+
+nav ul li a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:#d40000;
+
+    transition:.4s;
+
+}
+
+nav ul li a:hover::after{
+
+    width:100%;
+
+}
+
+/*=========================================
+        LOGO
+==========================================*/
+
+.logo h2{
+
+    transition:.4s;
+
+}
+
+.logo h2:hover{
+
+    color:#ffffff;
+
+    text-shadow:0 0 15px #d40000;
+
+}
+
+/*=========================================
+        STATISTICS
+==========================================*/
+
+.stat-box:hover,
+.stat:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/*=========================================
+        TABLE
+==========================================*/
+
+.specifications tr{
+
+    transition:.3s;
+
+}
+
+/*=========================================
+        INPUTS
+==========================================*/
+
+input,
+textarea{
+
+    transition:.3s;
+
+}
+
+input:focus,
+textarea:focus{
+
+    box-shadow:0 0 15px rgba(212,0,0,.5);
+
+}
+
+/*=========================================
+        FOOTER ICONS
+==========================================*/
+
+.social-icons i:hover{
+
+    transform:rotate(360deg);
+
+}
+
+/*=========================================
+        SHADOW
+==========================================*/
+
+.car-card,
+.service-card,
+.plan-card,
+.team-card,
+.feature-box,
+.review{
+
+    transition:.4s;
+
+}
+
+.car-card:hover,
+.service-card:hover,
+.plan-card:hover,
+.team-card:hover,
+.feature-box:hover,
+.review:hover{
+
+    box-shadow:0 20px 50px rgba(212,0,0,.35);
+
+}
+
+/*=========================================
+        HERO TITLE
+==========================================*/
+
+.hero-content h1{
+
+    animation:slideUp 1s ease;
+
+}
+
+.hero-content p{
+
+    animation:fadeIn 2s ease;
+
+}
+
+.hero-content .btn{
+
+    animation:zoom 1.5s ease;
+
+}
+
+/*=========================================
+        CTA
+==========================================*/
+
+.cta .btn:hover{
+
+    letter-spacing:1px;
+
+}
+
+/*=========================================
+        SCROLLBAR
+==========================================*/
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#ff1a1a;
+
+}
+/* =========================================
+   PROFESSIONAL FERRARI ANIMATIONS
+========================================= */
+
+/* Fade In */
+
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Slide Up */
+
+.slide-up {
+    animation: slideUp 0.8s ease forwards;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Car Card Hover */
+
+.car-card {
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+
+/* Car Image Zoom */
+
+.car-card img {
+    transition: transform 0.5s ease;
+}
+
+.car-card:hover img {
+    transform: scale(1.05);
+}
+
+
+/* Button Animation */
+
+.btn {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Navigation Link Animation */
+
+nav ul li a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -5px;
+
+    width: 0;
+    height: 2px;
+
+    background: red;
+
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+/* Service Card Hover */
+
+.service-card {
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Smooth Page Scrolling */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*=========================================
+        END
+==========================================*/

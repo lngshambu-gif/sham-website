@@ -1,0 +1,1086 @@
+/* ==========================================
+   FERRARI SHOWROOM
+   RESPONSIVE.CSS - PART 1
+========================================== */
+
+/* ===============================
+   Large Tablets (1200px)
+================================ */
+
+@media (max-width:1200px){
+
+header{
+
+    padding:20px 50px;
+
+}
+
+.hero-content h1{
+
+    font-size:60px;
+
+}
+
+section{
+
+    padding:80px 5%;
+
+}
+
+}
+
+/* ===============================
+   Tablets (992px)
+================================ */
+
+@media (max-width:992px){
+
+header{
+
+    padding:18px 30px;
+    flex-direction:column;
+
+}
+
+.logo{
+
+    margin-bottom:15px;
+
+}
+
+nav ul{
+
+    flex-wrap:wrap;
+    justify-content:center;
+
+}
+
+nav ul li{
+
+    margin:10px 15px;
+
+}
+
+/* Hero */
+
+.hero{
+
+    height:90vh;
+
+}
+
+.hero-content h1{
+
+    font-size:50px;
+
+}
+
+.hero-content p{
+
+    font-size:20px;
+
+}
+
+/* About */
+
+.about-section{
+
+    grid-template-columns:1fr;
+
+}
+
+.about-image{
+
+    order:1;
+
+}
+
+.about-text{
+
+    order:2;
+    text-align:center;
+
+}
+
+.about-text h2{
+
+    text-align:center;
+
+}
+
+/* Mission */
+
+.mission{
+
+    grid-template-columns:1fr;
+
+}
+
+/* Contact */
+
+.contact-section{
+
+    grid-template-columns:1fr;
+
+}
+
+/* Car Details */
+
+.car-details{
+
+    grid-template-columns:1fr;
+
+}
+
+.buttons{
+
+    justify-content:center;
+
+}
+
+}
+
+/* ===============================
+   Mobile Devices (768px)
+================================ */
+
+@media (max-width:768px){
+
+header{
+
+    padding:15px 20px;
+
+}
+
+.logo h2{
+
+    font-size:26px;
+
+}
+
+/* Navigation */
+
+nav ul{
+
+    flex-direction:column;
+
+}
+
+nav ul li{
+
+    margin:8px 0;
+
+}
+
+/* Hero */
+
+.hero{
+
+    height:80vh;
+
+}
+
+.hero-content h1{
+
+    font-size:40px;
+
+}
+
+.hero-content p{
+
+    font-size:18px;
+
+}
+
+.btn{
+
+    padding:12px 28px;
+
+}
+
+/* Banner */
+
+.banner-content h1{
+
+    font-size:40px;
+
+}
+
+.banner-content p{
+
+    font-size:17px;
+
+}
+
+/* Cars */
+
+.car-container,
+.car-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+/* Features */
+
+.feature-container{
+
+    grid-template-columns:1fr;
+
+}
+
+/* Why Choose */
+
+.why-container{
+
+    grid-template-columns:1fr;
+
+}
+
+/* Services */
+
+.service-container{
+
+    grid-template-columns:1fr;
+
+}
+
+/* Plans */
+
+.plan-container{
+
+    grid-template-columns:1fr;
+
+}
+
+/* Team */
+
+.team-container{
+
+    grid-template-columns:1fr;
+
+}
+
+/* Testimonials */
+
+.testimonial-container{
+
+    grid-template-columns:1fr;
+
+}
+
+/* Performance */
+
+.performance-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+/* Gallery */
+
+.gallery-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+/* Statistics */
+
+.stats{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+/* ===============================
+   Small Phones (576px)
+================================ */
+
+@media (max-width:576px){
+
+.hero-content h1{
+
+    font-size:32px;
+
+}
+
+.hero-content p{
+
+    font-size:16px;
+
+}
+
+section{
+
+    padding:60px 20px;
+
+}
+
+.car-card{
+
+    margin:0;
+
+}
+
+.car-card img{
+
+    height:200px;
+
+}
+
+.about-image img{
+
+    width:100%;
+
+}
+
+.contact-form{
+
+    padding:25px;
+
+}
+
+.contact-info{
+
+    padding:25px;
+
+}
+
+.service-card{
+
+    padding:25px;
+
+}
+
+.feature-box{
+
+    padding:25px;
+
+}
+
+.team-card img{
+
+    height:260px;
+
+}
+
+}
+
+/* ===============================
+   Extra Small Phones (400px)
+================================ */
+
+@media (max-width:400px){
+
+.hero-content h1{
+
+    font-size:28px;
+
+}
+
+.banner-content h1{
+
+    font-size:30px;
+
+}
+
+.logo h2{
+
+    font-size:22px;
+
+}
+
+.btn{
+
+    width:100%;
+    text-align:center;
+
+}
+
+.car-info h1{
+
+    font-size:32px;
+
+}
+
+.specifications table{
+
+    font-size:14px;
+
+}
+
+footer h3{
+
+    font-size:24px;
+
+}
+
+}
+/*=========================================
+        RESPONSIVE.CSS PART 2
+==========================================*/
+
+/* ===============================
+   Navigation Improvements
+================================ */
+
+@media (max-width:992px){
+
+header{
+
+    width:100%;
+}
+
+nav{
+
+    width:100%;
+    margin-top:15px;
+}
+
+nav ul{
+
+    justify-content:center;
+}
+
+}
+
+/* ===============================
+   Hero Section
+================================ */
+
+@media (max-width:768px){
+
+.hero{
+
+    background-position:center;
+}
+
+.hero-content{
+
+    padding:0 20px;
+}
+
+.hero-content h1{
+
+    line-height:1.2;
+}
+
+}
+
+/* ===============================
+   Section Headings
+================================ */
+
+@media (max-width:768px){
+
+section h2{
+
+    font-size:34px;
+}
+
+}
+
+/* ===============================
+   About Page
+================================ */
+
+@media (max-width:768px){
+
+.about-text p{
+
+    text-align:justify;
+}
+
+.about-image img{
+
+    border-radius:15px;
+}
+
+}
+
+/* ===============================
+   Car Details
+================================ */
+
+@media (max-width:768px){
+
+.car-info{
+
+    text-align:center;
+}
+
+.car-info h2{
+
+    text-align:center;
+}
+
+.buttons{
+
+    flex-direction:column;
+    align-items:center;
+}
+
+.buttons .btn{
+
+    width:250px;
+}
+
+}
+
+/* ===============================
+   Tables
+================================ */
+
+@media (max-width:768px){
+
+.specifications{
+
+    overflow-x:auto;
+}
+
+.specifications table{
+
+    min-width:600px;
+}
+
+}
+
+/* ===============================
+   Gallery Images
+================================ */
+
+@media (max-width:768px){
+
+.gallery-grid img{
+
+    height:220px;
+}
+
+}
+
+@media (max-width:576px){
+
+.gallery-grid img{
+
+    height:180px;
+}
+
+}
+
+/* ===============================
+   Contact Form
+================================ */
+
+@media (max-width:768px){
+
+.contact-form input,
+.contact-form textarea{
+
+    font-size:15px;
+}
+
+.contact-form button{
+
+    font-size:16px;
+}
+
+}
+
+/* ===============================
+   Service Cards
+================================ */
+
+@media (max-width:576px){
+
+.service-card i{
+
+    font-size:40px;
+}
+
+.service-card h3{
+
+    font-size:22px;
+}
+
+}
+
+/* ===============================
+   Team Section
+================================ */
+
+@media (max-width:576px){
+
+.team-card h3{
+
+    font-size:22px;
+}
+
+.team-card p{
+
+    font-size:15px;
+}
+
+}
+
+/* ===============================
+   Statistics
+================================ */
+
+@media (max-width:576px){
+
+.stat-box h2,
+.stat h2{
+
+    font-size:38px;
+}
+
+}
+
+/* ===============================
+   Footer
+================================ */
+
+@media (max-width:576px){
+
+footer{
+
+    padding:40px 20px;
+}
+
+.social-icons{
+
+    gap:12px;
+}
+
+.social-icons i{
+
+    width:42px;
+    height:42px;
+    font-size:16px;
+}
+
+}
+
+/* ===============================
+   Images
+================================ */
+
+@media (max-width:768px){
+
+img{
+
+    max-width:100%;
+    height:auto;
+}
+
+}
+
+/* ===============================
+   Utilities
+================================ */
+
+@media (max-width:768px){
+
+.text-center{
+
+    text-align:center;
+}
+
+.mt-40{
+
+    margin-top:25px;
+}
+
+.mb-40{
+
+    margin-bottom:25px;
+}
+
+}
+
+/* ===============================
+   Very Small Devices
+================================ */
+
+@media (max-width:360px){
+
+.hero-content h1{
+
+    font-size:24px;
+}
+
+.hero-content p{
+
+    font-size:14px;
+}
+
+.btn{
+
+    padding:10px 20px;
+    font-size:14px;
+}
+
+.logo h2{
+
+    font-size:20px;
+}
+
+section h2{
+
+    font-size:28px;
+}
+
+.banner-content h1{
+
+    font-size:26px;
+}
+
+.banner-content p{
+
+    font-size:14px;
+}
+
+.contact-form,
+.contact-info{
+
+    padding:18px;
+}
+
+}
+
+/* =========================================
+   MOBILE & TABLET RESPONSIVE DESIGN
+========================================= */
+
+/* Tablets */
+@media (max-width: 992px) {
+
+    .hero-content {
+        padding: 40px;
+    }
+
+    .hero-content h1 {
+        font-size: 45px;
+    }
+
+    .cars-grid,
+    .models-grid,
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .contact-container {
+        width: 90%;
+    }
+}
+
+
+/* Mobile Phones */
+@media (max-width: 768px) {
+
+    /* Navigation */
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        list-style: none;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        min-height: 70vh;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding: 30px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+
+    /* Cards */
+
+    .cars-grid,
+    .models-grid,
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .car-card {
+        width: 100%;
+    }
+
+
+    /* About */
+
+    .about-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .about-image img {
+        width: 100%;
+    }
+
+
+    /* Contact / Forms */
+
+    .contact-section {
+        padding: 70px 20px 50px;
+    }
+
+    .contact-form {
+        padding: 25px 20px;
+    }
+
+    .contact-container {
+        width: 100%;
+    }
+
+
+    /* Test Drive */
+
+    .section-title h1 {
+        font-size: 32px;
+    }
+
+    .section-title p {
+        font-size: 14px;
+    }
+
+
+    /* Buttons */
+
+    .btn,
+    .details-btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+
+    /* Footer */
+
+    footer {
+        text-align: center;
+        padding: 25px 15px;
+    }
+
+}
+
+
+/* Small Phones */
+
+@media (max-width: 480px) {
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .section-title h1 {
+        font-size: 28px;
+    }
+
+    .contact-form {
+        padding: 20px 15px;
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+        font-size: 14px;
+        padding: 13px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+        padding: 13px;
+    }
+
+}
+/* =========================================
+   MOBILE FULL WIDTH FIX
+========================================= */
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    header,
+    nav,
+    main,
+    section,
+    footer {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .container,
+    .hero-content,
+    .contact-container,
+    .about-container,
+    .cars-grid,
+    .models-grid,
+    .services-grid {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+/* =========================================
+   MOBILE HAMBURGER NAVIGATION
+========================================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 20px;
+        box-sizing: border-box;
+    }
+
+    /* Hamburger button */
+
+    .menu-toggle {
+        display: block;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 25px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    /* Navigation menu */
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        display: none;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 20px 0;
+        margin: 0;
+
+        background: #111;
+
+        z-index: 1000;
+    }
+
+    /* When menu is opened */
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        list-style: none;
+        margin: 0;
+    }
+
+    .nav-links li a {
+        display: block;
+        width: 100%;
+        padding: 14px 0;
+
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav-links li a:hover {
+        background: #222;
+        color: red;
+    }
+
+}
+
+
+/* =========================================
+   DESKTOP NAVIGATION
+========================================= */
+
+@media (min-width: 769px) {
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+
+}
+/*=========================================
+      END OF RESPONSIVE.CSS
+==========================================*/

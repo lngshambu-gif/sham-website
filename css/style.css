@@ -1,0 +1,2016 @@
+/* =========================================
+   FERRARI SHOWROOM WEBSITE
+   STYLE.CSS - PART 1
+========================================= */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+/* Body */
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#0a0a0a;
+
+    color:#ffffff;
+
+    overflow-x:hidden;
+
+}
+
+/* Selection */
+
+::selection{
+
+    background:#d40000;
+
+    color:white;
+
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#d40000;
+
+    border-radius:20px;
+
+}
+
+/* Links */
+
+a{
+
+    text-decoration:none;
+
+    color:white;
+
+}
+
+/* Images */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+/* Lists */
+
+ul{
+
+    list-style:none;
+
+}
+
+/* ====================================
+HEADER
+==================================== */
+
+header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 90px;
+
+    background:rgba(0,0,0,.85);
+
+    backdrop-filter:blur(10px);
+
+    z-index:999;
+
+}
+
+.logo h2{
+
+    color:#d40000;
+
+    font-size:32px;
+
+    letter-spacing:3px;
+
+    font-weight:700;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+nav ul li{
+
+    margin-left:35px;
+
+}
+
+nav ul li a{
+
+    font-size:17px;
+
+    transition:.4s;
+
+    font-weight:500;
+
+}
+
+nav ul li a:hover,
+
+nav ul li a.active{
+
+    color:#d40000;
+
+}
+
+/* ====================================
+HERO SECTION
+==================================== */
+
+.hero {
+    min-height: 760px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(20, 0, 0, 0.65)
+        ),
+        url("../images/showroom.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.20);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+
+    width: 55%;
+    max-width: 750px;
+
+    padding: 25px 25px;
+
+    background: rgba(20, 0, 0, 0.35);
+
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    border-radius: 20px;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    box-shadow:
+        0 0 20px rgba(255, 0, 0, 0.12),
+        inset 0 0 20px rgba(255, 0, 0, 0.05);
+}
+.hero-content h1{
+
+    font-size:70px;
+
+    margin-bottom:20px;
+
+}
+
+.hero-content p{
+
+    font-size:22px;
+
+    margin-bottom:40px;
+
+    color:#ddd;
+
+}
+
+/* Button */
+
+.btn{
+
+    display:inline-block;
+
+    padding:15px 40px;
+
+    background:#d40000;
+
+    border-radius:50px;
+
+    transition:.4s;
+
+    color:white;
+
+    font-weight:600;
+
+}
+
+.btn:hover{
+
+    background:white;
+
+    color:#d40000;
+
+    transform:translateY(-5px);
+
+}
+
+/* ====================================
+SECTION
+==================================== */
+
+section{
+
+    padding:90px 8%;
+
+}
+
+section h2{
+
+    text-align:center;
+
+    font-size:42px;
+
+    margin-bottom:60px;
+
+}
+
+/* ====================================
+CAR CARDS
+==================================== */
+
+.car-container,
+
+.car-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+}
+
+.car-card{
+
+    background:#181818;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.4);
+
+}
+
+.car-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.car-card img{
+
+    width:100%;
+
+    height:230px;
+
+    object-fit:cover;
+
+}
+
+.car-card h3{
+
+    margin:20px;
+
+    color:#d40000;
+
+}
+
+.car-card p{
+
+    margin:0 20px 15px;
+
+    color:#ccc;
+
+}
+
+.car-card button{
+
+    margin:20px;
+
+    padding:12px 25px;
+
+    background:#d40000;
+
+    color:white;
+
+    border:none;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.car-card button:hover{
+
+    background:white;
+
+    color:#d40000;
+
+}
+
+/* ====================================
+ABOUT SECTION
+==================================== */
+
+.about-section{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+.about-image img{
+
+    border-radius:20px;
+
+}
+
+.about-text h2{
+
+    text-align:left;
+
+    margin-bottom:25px;
+
+}
+
+.about-text p{
+
+    color:#ccc;
+
+    line-height:1.9;
+
+    margin-bottom:20px;
+
+}
+
+/* ====================================
+MISSION
+==================================== */
+
+.mission{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+}
+
+.mission-box{
+
+    background:#181818;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+}
+
+.mission-box i{
+
+    font-size:45px;
+
+    color:#d40000;
+
+    margin-bottom:20px;
+
+}
+
+.mission-box h2{
+
+    margin-bottom:15px;
+
+}
+
+.mission-box p{
+
+    color:#bbb;
+
+}
+
+/* ====================================
+WHY CHOOSE US
+==================================== */
+
+.why-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.why-card{
+
+    background:#181818;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+}
+
+.why-card i{
+
+    color:#d40000;
+
+    font-size:45px;
+
+    margin-bottom:20px;
+
+}
+
+.why-card h3{
+
+    margin-bottom:15px;
+
+}
+
+.why-card p{
+
+    color:#bbb;
+
+}
+
+/*==========================================
+    STYLE.CSS PART 2
+    Services • Statistics • Team
+    Contact • Footer
+==========================================*/
+
+/*========== Banner Sections ==========*/
+
+.about-banner,
+.service-banner,
+.contact-banner,
+.page-banner{
+
+    height:55vh;
+    background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("../images/banner.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.banner-content h1{
+
+    font-size:60px;
+    color:#fff;
+    margin-bottom:20px;
+}
+
+.banner-content p{
+
+    color:#ddd;
+    font-size:20px;
+}
+
+/*========== Services ==========*/
+
+.services-section{
+
+    background:#111;
+}
+
+.service-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.service-card{
+
+    background:#181818;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    transition:.4s;
+    border:1px solid transparent;
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+    border-color:#d40000;
+}
+
+.service-card i{
+
+    font-size:50px;
+    color:#d40000;
+    margin-bottom:20px;
+}
+
+.service-card h3{
+
+    margin-bottom:15px;
+}
+
+.service-card p{
+
+    color:#cfcfcf;
+    line-height:1.8;
+}
+
+/*========== Service Process ==========*/
+
+.process-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.process-box{
+
+    background:#181818;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.process-box h1{
+
+    font-size:60px;
+    color:#d40000;
+}
+
+.process-box h3{
+
+    margin:20px 0;
+}
+
+.process-box p{
+
+    color:#bbb;
+}
+
+/*========== Plans ==========*/
+
+.plan-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.plan-card{
+
+    background:#181818;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.plan-card h3{
+
+    color:#d40000;
+}
+
+.plan-card h1{
+
+    margin:20px 0;
+    font-size:45px;
+}
+
+.plan-card ul{
+
+    margin-top:25px;
+}
+
+.plan-card ul li{
+
+    padding:12px 0;
+    border-bottom:1px solid #333;
+}
+
+.premium{
+
+    border:2px solid #d40000;
+    transform:scale(1.05);
+}
+
+/*========== Statistics ==========*/
+
+.stats{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+    text-align:center;
+}
+
+.stat-box,
+.stat{
+
+    background:#181818;
+    padding:40px;
+    border-radius:18px;
+}
+
+.stat-box h2,
+.stat h2{
+
+    color:#d40000;
+    font-size:50px;
+}
+
+.stat-box p,
+.stat p{
+
+    margin-top:15px;
+    color:#ccc;
+}
+
+/*========== Team ==========*/
+
+.team-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:35px;
+}
+
+.team-card{
+
+    background:#181818;
+    border-radius:20px;
+    overflow:hidden;
+    text-align:center;
+    transition:.4s;
+}
+
+.team-card:hover{
+
+    transform:translateY(-10px);
+}
+
+.team-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center 20%;
+}
+
+.team-card h3{
+
+    margin-top:20px;
+}
+
+.team-card p{
+
+    margin:15px 0 25px;
+    color:#bbb;
+}
+
+/*========== Testimonials ==========*/
+
+.testimonial-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.review{
+
+    background:#181818;
+    padding:35px;
+    border-radius:20px;
+}
+
+.review p{
+
+    color:#ddd;
+    line-height:1.8;
+}
+
+.review h4{
+
+    color:#d40000;
+    margin-top:20px;
+}
+
+/*========== Contact Section ==========*/
+
+.contact-section{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+}
+
+.contact-info{
+
+    background:#181818;
+    padding:40px;
+    border-radius:20px;
+}
+
+.info-box{
+
+    display:flex;
+    margin:30px 0;
+}
+
+.info-box i{
+
+    color:#d40000;
+    font-size:28px;
+    margin-right:20px;
+    margin-top:8px;
+}
+
+.info-box h3{
+
+    margin-bottom:10px;
+}
+
+.info-box p{
+
+    color:#bbb;
+}
+
+/*========== Contact Form ==========*/
+
+.contact-form{
+
+    background:#181818;
+    padding:40px;
+    border-radius:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    width:100%;
+    padding:16px;
+    margin-bottom:20px;
+    border:none;
+    outline:none;
+    background:#2a2a2a;
+    color:white;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.contact-form button{
+
+    width:100%;
+    padding:16px;
+    background:#d40000;
+    color:white;
+    border:none;
+    border-radius:40px;
+    cursor:pointer;
+    font-size:17px;
+    transition:.3s;
+}
+
+.contact-form button:hover{
+
+    background:white;
+    color:#d40000;
+}
+
+/*========== Google Map ==========*/
+
+.map iframe{
+
+    border-radius:20px;
+}
+
+/*========== Social Icons ==========*/
+
+.social-icons{
+
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.social-icons i{
+
+    width:50px;
+    height:50px;
+    background:#222;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    transition:.4s;
+    cursor:pointer;
+}
+
+.social-icons i:hover{
+
+    background:#d40000;
+    transform:translateY(-8px);
+}
+
+/*========== CTA ==========*/
+
+.cta{
+
+    text-align:center;
+    background:#151515;
+}
+
+.cta h2{
+
+    margin-bottom:20px;
+}
+
+.cta p{
+
+    color:#ccc;
+    margin-bottom:35px;
+}
+
+/*========== Footer ==========*/
+
+footer{
+
+    background:#050505;
+    padding:50px 20px;
+    text-align:center;
+}
+
+footer h3{
+
+    color:#d40000;
+    font-size:30px;
+}
+
+footer p{
+
+    margin-top:15px;
+    color:#bbb;
+}
+
+footer .social-icons{
+
+    margin:30px 0;
+}
+
+/*==========================================
+        STYLE.CSS PART 3
+     Car Details • Gallery • FAQ
+     Utilities • Final Styling
+==========================================*/
+
+/*=============================
+    CAR DETAILS
+==============================*/
+
+.car-details{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.car-image img{
+
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.5);
+}
+
+.car-info h1{
+
+    font-size:48px;
+    color:#d40000;
+    margin-bottom:20px;
+}
+
+.car-info h2{
+
+    text-align:left;
+    margin-bottom:25px;
+    color:#ffffff;
+}
+
+.car-info p{
+
+    color:#cccccc;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.buttons{
+
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+/*=============================
+   SPECIFICATIONS
+==============================*/
+
+.specifications table{
+
+    width:100%;
+    border-collapse:collapse;
+    background:#181818;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.specifications th{
+
+    background:#d40000;
+    color:#ffffff;
+    padding:18px;
+    text-align:left;
+}
+
+.specifications td{
+
+    padding:18px;
+    border-bottom:1px solid #333;
+    color:#dddddd;
+}
+
+.specifications tr:hover{
+
+    background:#222;
+}
+
+/*=============================
+      FEATURES
+==============================*/
+
+.feature-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.feature-box{
+
+    background:#181818;
+    padding:35px;
+    border-radius:18px;
+    text-align:center;
+    transition:.4s;
+}
+
+.feature-box:hover{
+
+    transform:translateY(-10px);
+}
+
+.feature-box i{
+
+    font-size:50px;
+    color:#d40000;
+    margin-bottom:20px;
+}
+
+.feature-box h3{
+
+    margin-bottom:15px;
+}
+
+.feature-box p{
+
+    color:#bbbbbb;
+}
+
+/*=============================
+        GALLERY
+==============================*/
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 100%;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+}
+
+.gallery-grid img{
+
+    width:100%;
+    height:240px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:.4s;
+    cursor:pointer;
+}
+
+.gallery-grid img:hover{
+
+    transform:scale(1.05);
+}
+
+/*=============================
+     PERFORMANCE
+==============================*/
+
+.performance-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.performance-card{
+
+    background:#181818;
+    padding:35px;
+    text-align:center;
+    border-radius:18px;
+}
+
+.performance-card h3{
+
+    color:#d40000;
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.performance-card p{
+
+    color:#cccccc;
+}
+
+/*=============================
+        FAQ
+==============================*/
+
+.faq-box{
+
+    background:#181818;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:15px;
+}
+
+.faq-box h3{
+
+    color:#d40000;
+    margin-bottom:15px;
+}
+
+.faq-box p{
+
+    color:#cccccc;
+    line-height:1.8;
+}
+
+/*=============================
+       SUPPORT
+==============================*/
+
+.support{
+
+    text-align:center;
+}
+
+.support p{
+
+    color:#cccccc;
+    margin:20px auto;
+    max-width:700px;
+}
+
+.support i{
+
+    margin-top:30px;
+    color:#d40000;
+}
+
+/*=============================
+       PAGE TITLES
+==============================*/
+
+h1,h2,h3{
+
+    font-weight:700;
+}
+
+p{
+
+    font-size:16px;
+}
+
+/*=============================
+      INPUT FOCUS
+==============================*/
+
+input:focus,
+textarea:focus{
+
+    border:2px solid #d40000;
+}
+
+/*=============================
+     TABLET BUTTONS
+==============================*/
+
+button{
+
+    font-family:'Poppins',sans-serif;
+}
+
+/*=============================
+      SHADOWS
+==============================*/
+
+.car-card,
+.team-card,
+.plan-card,
+.service-card,
+.feature-box,
+.review,
+.contact-form,
+.contact-info{
+
+    box-shadow:0 12px 30px rgba(0,0,0,.35);
+}
+
+/*=============================
+     HOVER EFFECTS
+==============================*/
+
+.car-card:hover,
+.service-card:hover,
+.team-card:hover,
+.feature-box:hover,
+.plan-card:hover{
+
+    box-shadow:0 20px 45px rgba(212,0,0,.35);
+}
+
+/*=============================
+       UTILITIES
+==============================*/
+
+.text-center{
+
+    text-align:center;
+}
+
+.mt-20{
+
+    margin-top:20px;
+}
+
+.mt-40{
+
+    margin-top:40px;
+}
+
+.mb-20{
+
+    margin-bottom:20px;
+}
+
+.mb-40{
+
+    margin-bottom:40px;
+}
+
+/*=============================
+     BACKGROUND COLORS
+==============================*/
+
+.bg-dark{
+
+    background:#111;
+}
+
+.bg-black{
+
+    background:#000;
+}
+
+.bg-red{
+
+    background:#d40000;
+}
+
+/*=============================
+       BORDER RADIUS
+==============================*/
+
+.rounded{
+
+    border-radius:15px;
+}
+
+.rounded-lg{
+
+    border-radius:25px;
+}
+
+/*=============================
+        TRANSITIONS
+==============================*/
+
+*{
+
+    transition:.3s ease;
+}
+
+/*=============================
+          FOOTER
+==============================*/
+
+footer{
+
+    border-top:2px solid #d40000;
+}
+/* View Details Link - Button Style */
+.details-btn {
+    display: inline-block;
+    background: #ff0000;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.details-btn:hover {
+    background: #cc0000;
+    transform: translateY(-3px);
+}
+/* =========================================
+   TEST DRIVE PAGE
+========================================= */
+
+.contact-section {
+    min-height: 80vh;
+    padding: 100px 8% 80px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.section-title p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.contact-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    padding: 40px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    background: #111;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: red;
+}
+
+.contact-form select {
+    cursor: pointer;
+}
+
+.contact-form label {
+    margin-bottom: -10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.contact-form button {
+    margin-top: 10px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 30px;
+    background: red;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #cc0000;
+    transform: translateY(-3px);
+}
+.showroom-title {
+    font-size: 36px;
+    letter-spacing: 8px;
+    font-weight: 700;
+
+    background: linear-gradient(
+        90deg,
+        #8b0000,
+        #ff0000,
+        #ffffff,
+        #ff0000,
+        #8b0000
+    );
+
+    background-size: 200% auto;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.7));
+
+    animation: showroomShine 3s linear infinite;
+
+    margin-bottom: 15px;
+}
+
+@keyframes showroomShine {
+    0% {
+        background-position: 200% center;
+    }
+
+    100% {
+        background-position: -200% center;
+    }
+}
+/* =========================================
+   SHAM FERRARI SHOWROOM
+   RED LIQUID GLASS THEME
+========================================= */
+
+/* Main website */
+body {
+    background: #050000;
+    color: #ffffff;
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+header {
+    background: rgba(5, 0, 0, 0.85);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 0, 0, 0.25);
+}
+
+.logo span {
+    color: #ff1a1a;
+    text-shadow:
+        0 0 5px rgba(255, 0, 0, 0.7),
+        0 0 15px rgba(255, 0, 0, 0.5);
+}
+
+.nav-links a {
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff1a1a;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+}
+
+/* =========================================
+   HERO - LIQUID BACKGROUND
+========================================= */
+
+.hero {
+    position: relative;
+
+    background-image:
+        linear-gradient(
+            rgba(20, 0, 0, 0.45),
+            rgba(5, 0, 0, 0.75)
+        ),
+        url("../images/red-liquid-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    min-height: 750px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+/* Red glow */
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+
+    background: rgba(255, 0, 0, 0.25);
+    filter: blur(120px);
+
+    top: 20%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    pointer-events: none;
+}
+
+/* Hero content */
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+
+    background: rgba(20, 0, 0, 0.25);
+    backdrop-filter: blur(8px);
+
+    padding: 45px 60px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 0 40px rgba(255, 0, 0, 0.2),
+        inset 0 0 30px rgba(255, 0, 0, 0.08);
+}
+
+/* =========================================
+   SHAM FERRARI SHOWROOM TITLE
+========================================= */
+
+.showroom-title {
+    font-size: 36px;
+    letter-spacing: 8px;
+    font-weight: 700;
+
+    background: linear-gradient(
+        90deg,
+        #700000,
+        #ff0000,
+        #ffffff,
+        #ff0000,
+        #700000
+    );
+
+    background-size: 250% auto;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    filter:
+        drop-shadow(0 0 5px rgba(255, 0, 0, 0.8))
+        drop-shadow(0 0 15px rgba(255, 0, 0, 0.4));
+
+    animation: showroomShine 3s linear infinite;
+
+    margin-bottom: 18px;
+}
+
+@keyframes showroomShine {
+
+    0% {
+        background-position: 200% center;
+    }
+
+    100% {
+        background-position: -200% center;
+    }
+
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.btn,
+.details-btn {
+    background: linear-gradient(
+        135deg,
+        #8b0000,
+        #ff0000,
+        #8b0000
+    );
+
+    color: #ffffff;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    box-shadow:
+        0 5px 20px rgba(255, 0, 0, 0.35),
+        inset 0 1px 1px rgba(255, 255, 255, 0.3);
+
+    transition: 0.35s ease;
+}
+
+.btn:hover,
+.details-btn:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 35px rgba(255, 0, 0, 0.6),
+        0 0 15px rgba(255, 0, 0, 0.5);
+}
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+.models,
+.about,
+.services,
+.stats,
+.testimonials,
+.contact {
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(120, 0, 0, 0.18),
+            transparent 45%
+        ),
+        #050000;
+}
+
+/* Section headings */
+.models h2,
+.about h2,
+.services h2,
+.testimonials h2,
+.contact h2 {
+    color: #ffffff;
+
+    text-shadow:
+        0 0 10px rgba(255, 0, 0, 0.35);
+}
+
+/* =========================================
+   GLASS CARDS
+========================================= */
+
+.car-card,
+.service,
+.review,
+.stat {
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 0, 0, 0.12),
+            rgba(30, 0, 0, 0.55)
+        );
+
+    backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 80, 80, 0.18);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.25),
+        inset 0 1px 1px rgba(255, 255, 255, 0.08);
+
+    transition: 0.4s ease;
+}
+
+/* Card hover */
+.car-card:hover,
+.service:hover,
+.review:hover {
+
+    transform: translateY(-10px);
+
+    border-color: rgba(255, 0, 0, 0.5);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.6),
+        0 0 25px rgba(255, 0, 0, 0.25);
+}
+
+/* =========================================
+   CAR IMAGES
+========================================= */
+
+.car-card img {
+    transition: 0.5s ease;
+}
+
+.car-card:hover img {
+    transform: scale(1.04);
+}
+
+/* =========================================
+   STATS
+========================================= */
+
+.stat h2 {
+    color: #ff1a1a;
+
+    text-shadow:
+        0 0 10px rgba(255, 0, 0, 0.7),
+        0 0 25px rgba(255, 0, 0, 0.35);
+}
+
+/* =========================================
+   CONTACT FORM
+========================================= */
+
+.contact input,
+.contact textarea {
+
+    background: rgba(30, 0, 0, 0.55);
+
+    color: #ffffff;
+
+    border: 1px solid rgba(255, 0, 0, 0.25);
+
+    backdrop-filter: blur(10px);
+
+    border-radius: 12px;
+
+    outline: none;
+
+    transition: 0.3s ease;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+
+    border-color: #ff0000;
+
+    box-shadow:
+        0 0 15px rgba(255, 0, 0, 0.3);
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+    background:
+        linear-gradient(
+            180deg,
+            #100000,
+            #030000
+        );
+
+    border-top: 1px solid rgba(255, 0, 0, 0.2);
+}
+
+footer h3 {
+    color: #ff0000;
+
+    text-shadow:
+        0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #050000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        #700000,
+        #ff0000,
+        #700000
+    );
+
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff0000;
+}
+/* ===== RED GLASS CLICK EFFECT ===== */
+
+button,
+.btn,
+.details-btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Glass shine when hovering */
+button:hover,
+.btn:hover,
+.details-btn:hover {
+    background: rgba(255, 0, 0, 0.75);
+    backdrop-filter: blur(10px);
+
+    box-shadow:
+        0 0 15px rgba(255, 0, 0, 0.7),
+        0 0 35px rgba(255, 0, 0, 0.35);
+
+    transform: translateY(-3px);
+}
+
+/* Shine that appears when clicking */
+button:active,
+.btn:active,
+.details-btn:active {
+    transform: scale(0.94);
+
+    background: rgba(255, 0, 0, 0.9);
+
+    box-shadow:
+        0 0 10px #ff0000,
+        0 0 30px #ff0000,
+        0 0 60px rgba(255, 0, 0, 0.7);
+
+    backdrop-filter: blur(15px);
+}
+
+/* Moving glass shine */
+button::after,
+.btn::after,
+.details-btn::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: -120%;
+
+    width: 60%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.45),
+        transparent
+    );
+
+    transform: skewX(-25deg);
+}
+
+/* Shine moves when hovering */
+button:hover::after,
+.btn:hover::after,
+.details-btn:hover::after {
+    left: 130%;
+    transition: left 0.7s ease;
+}
+/* =========================================
+   PREMIUM RED GLOW EFFECT
+   ========================================= */
+
+/* Red headings and important text */
+h1,
+h2,
+h3,
+.logo,
+.logo span {
+    text-shadow:
+        0 0 5px rgba(255, 0, 0, 0.4),
+        0 0 10px rgba(255, 0, 0, 0.35),
+        0 0 20px rgba(255, 0, 0, 0.25);
+}
+
+/* Red text specifically */
+.car-card h3 {
+    color: #ff0000;
+    text-shadow:
+        0 0 5px rgba(255, 0, 0, 0.6),
+        0 0 12px rgba(255, 0, 0, 0.5),
+        0 0 25px rgba(255, 0, 0, 0.35);
+}
+
+/* Main showroom title */
+.hero-content h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+
+    text-shadow:
+        0 0 5px rgba(255, 0, 0, 0.5),
+        0 0 12px rgba(255, 0, 0, 0.25);
+}
+
+/* Red buttons */
+.btn,
+.details-btn,
+button {
+    box-shadow:
+        0 0 5px rgba(255, 0, 0, 0.5),
+        0 0 15px rgba(255, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+/* Button hover glow */
+.btn:hover,
+.details-btn:hover,
+button:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 0 8px #ff0000,
+        0 0 20px #ff0000,
+        0 0 40px rgba(255, 0, 0, 0.7);
+}
+
+/* Red glowing border on cards */
+.car-card {
+    transition: all 0.4s ease;
+}
+
+.car-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 0, 0, 0.7);
+
+    box-shadow:
+        0 0 10px rgba(255, 0, 0, 0.3),
+        0 0 25px rgba(255, 0, 0, 0.25),
+        0 0 50px rgba(255, 0, 0, 0.15);
+}
+
+/* Red glow for links when hovering */
+nav a {
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff0000;
+    text-shadow:
+        0 0 5px #ff0000,
+        0 0 15px rgba(255, 0, 0, 0.7);
+}
+
+/* Red glowing line under navbar */
+header {
+    border-bottom: 1px solid rgba(255, 0, 0, 0.4);
+    box-shadow:
+        0 2px 15px rgba(255, 0, 0, 0.15);
+}
+/* =========================================
+   ANIMATED RED NEON SHOWROOM TITLE
+========================================= */
+
+.hero-content h1 {
+    animation: redGlow 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes redGlow {
+
+    from {
+        text-shadow:
+            0 0 5px #ff0000,
+            0 0 10px rgba(255, 0, 0, 0.5),
+            0 0 20px rgba(255, 0, 0, 0.3);
+    }
+
+    to {
+        text-shadow:
+            0 0 10px #ff0000,
+            0 0 20px #ff0000,
+            0 0 35px rgba(255, 0, 0, 0.8),
+            0 0 60px rgba(255, 0, 0, 0.4);
+    }
+
+}
+.third-person img {
+    object-fit: cover;
+    object-position: center 25%;
+}
+.first-person img {
+    object-fit: cover;
+    object-position: center 10%;
+}

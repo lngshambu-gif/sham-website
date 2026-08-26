@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book a Test Drive | Ferrari Showroom</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animation.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                FERRARI
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="cars.html">Cars</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="services.html">Services</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Test Drive Section -->
+
+    <section class="contact-section">
+
+        <div class="section-title">
+
+            <h1>Book a Test Drive</h1>
+
+            <p>
+                Experience Ferrari performance for yourself.
+                Complete the form below and our showroom team
+                will contact you.
+            </p>
+
+        </div>
+
+
+        <div class="contact-container">
+
+            <div class="contact-form">
+
+                <form onsubmit="event.preventDefault(); bookTestDrive();">
+
+                    <input
+                        type="text"
+                        placeholder="Full Name"
+                        required>
+
+                    <input
+                        type="email"
+                        placeholder="Email Address"
+                        required>
+
+                    <input
+                        type="tel"
+                        placeholder="Phone Number"
+                        required>
+
+                    <select required>
+
+                        <option value="">
+                            Select Ferrari Model
+                        </option>
+
+                        <option>
+                            Ferrari SF90 Stradale
+                        </option>
+
+                        <option>
+                            Ferrari 296 GTB
+                        </option>
+
+                        <option>
+                            Ferrari Roma
+                        </option>
+
+                        <option>
+                            Ferrari F8 Tributo
+                        </option>
+
+                        <option>
+                            Ferrari 812 Superfast
+                        </option>
+
+                        <option>
+                            Ferrari Purosangue
+                        </option>
+
+                    </select>
+
+
+                    <label>
+                        Preferred Date
+                    </label>
+
+                    <input
+                        type="date"
+                        required>
+
+
+                    <label>
+                        Preferred Time
+                    </label>
+
+                    <input
+                        type="time"
+                        required>
+
+
+                    <button type="submit">
+
+                        Book Test Drive
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Ferrari Showroom. Student Project.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script>
+
+        function bookTestDrive() {
+
+            alert(
+                "Thank you for booking a Ferrari test drive! Our showroom team will contact you soon."
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>
